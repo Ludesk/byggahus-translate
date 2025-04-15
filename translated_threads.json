@@ -14,8 +14,8 @@
       "claude-3-7-sonnet-latest": {
         "text": "Replacing wet room carpet?",
         "tokens": {
-          "input_tokens": 103,
-          "output_tokens": 9,
+          "prompt_tokens": 103,
+          "completion_tokens": 9,
           "total_tokens": 112
         }
       },
@@ -60,8 +60,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "Can you only replace the floor mat in a bathroom if there's wall mat in the shower and wallpaper in other areas? The mat is fairly new but looks d--n awful and I don't want to spend too much...\n\n// Erik",
             "tokens": {
-              "input_tokens": 160,
-              "output_tokens": 53,
+              "prompt_tokens": 160,
+              "completion_tokens": 53,
               "total_tokens": 213
             }
           },
@@ -102,8 +102,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "Yes, it can be done. You need to cut about 1 cm below the wall vinyl around the entire bathroom using a ruler so that the joint becomes straight. Then apply filler, place the new piece and weld the pieces together with thread. Fiddly but doable.\nAnders",
             "tokens": {
-              "input_tokens": 168,
-              "output_tokens": 65,
+              "prompt_tokens": 168,
+              "completion_tokens": 65,
               "total_tokens": 233
             }
           },
@@ -142,8 +142,8 @@
       "claude-3-7-sonnet-latest": {
         "text": "Building the villa, but which one",
         "tokens": {
-          "input_tokens": 103,
-          "output_tokens": 10,
+          "prompt_tokens": 103,
+          "completion_tokens": 10,
           "total_tokens": 113
         }
       },
@@ -188,8 +188,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "Hello!\n\nWe are about to build a villa. But I find it really hard to decide whether I should go for a one-story or 1.5-story house - sigh?\n\nWhat are the advantages of one-story vs 1.5-story? I assume maintenance is a bit simpler with a one-story, but is it cheaper? We will need approximately 150-170 square meters.\n\nHow did you determine which house type suited you best?\n\nRegards,\nLasseman with family.",
             "tokens": {
-              "input_tokens": 248,
-              "output_tokens": 115,
+              "prompt_tokens": 248,
+              "completion_tokens": 115,
               "total_tokens": 363
             }
           },
@@ -230,8 +230,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "Hello!\n\nWe have a desire for a separate private \"sleeping section\" and will therefore choose a 1.5-story house. The upper floor will contain three bedrooms and the lower floor a guest room/office as well as common areas such as living room, dining room and kitchen. Additional advantages with 1.5-story vs. 1-story is that you get a larger garden/don't need as large a plot. I also seem to recall that 1.5-story is somewhat cheaper per square meter.\n\nGood luck!\n\n//Impossible",
             "tokens": {
-              "input_tokens": 248,
-              "output_tokens": 121,
+              "prompt_tokens": 248,
+              "completion_tokens": 121,
               "total_tokens": 369
             }
           },
@@ -272,8 +272,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "Hi!\nWe want to avoid running up and down stairs...for that simple reason we chose a single-story house. We also had a large enough plot (2000 sqm) that it worked well. We have 159 sqm; on one end 3 bedrooms, bathroom and a small family room and on the other side kitchen, living room, office and laundry room. The house was erected yesterday!!!\n\nBut yes, single-story houses are a bit more expensive, because the foundation costs more, but we didn't think that mattered much. I have some difficulty with 1 1/2-story houses because of the sloped ceilings, I think they're hard to furnish, I would rather choose a 2-story house if I wanted multiple floors.\n\nYes, it's not easy...far too many choices to make along the way...\nGood luck anyway!",
             "tokens": {
-              "input_tokens": 338,
-              "output_tokens": 194,
+              "prompt_tokens": 338,
+              "completion_tokens": 194,
               "total_tokens": 532
             }
           },
@@ -314,8 +314,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "Hi!\n\nWe're building a 1½-story Kvadraten from Eksjöhus. We were initially considering a 1-story, but 1½-story turned out to be a bit cheaper and we like the floor plan.\n\nMy suggestion, if you don't know what you want, is to order a bunch of catalogs and weigh the pros and cons of different floor plans. Also keep an eye out for house viewings, the houses can be something completely different in reality than on the drawing.\n\nGood luck!",
             "tokens": {
-              "input_tokens": 234,
-              "output_tokens": 118,
+              "prompt_tokens": 234,
+              "completion_tokens": 118,
               "total_tokens": 352
             }
           },
@@ -356,8 +356,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "[quote=Monica9]Hello!\nWe want to avoid running up and down stairs...for that simple reason we chose a single-story house. We also had a large enough lot (2000 sqm) for it to work. We have 159 sqm; at one end 3 bedrooms, bathroom and a small family room and on the other side kitchen, living room, office and laundry room. The house went up yesterday!!!\n\nBut yes, single-story houses are a bit more expensive, because the foundation costs more, but we didn't think that mattered much. I find 1 1/2-story houses a bit difficult because of the sloped ceilings, I think they're hard to furnish, I would rather choose a 2-story house if I wanted multiple floors.\n\nYes, it's not easy...far too many choices to make along the way..\nGood luck anyway![/quote]\n\nOh how cool! What house have you built? - Now I'm super curious. We have a fairly large lot, about 1300 sqm, so it should be enough for a decent single-story house if we choose that (strongly leaning toward it).",
             "tokens": {
-              "input_tokens": 422,
-              "output_tokens": 259,
+              "prompt_tokens": 422,
+              "completion_tokens": 259,
               "total_tokens": 681
             }
           },
@@ -398,8 +398,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "Hello again!\n\nWe are building with Mjöbäcksvillan, but have redesigned another house a bit so it would suit us! I'll see if I can find a drawing in my email and send it to you!\n/Monica!",
             "tokens": {
-              "input_tokens": 159,
-              "output_tokens": 57,
+              "prompt_tokens": 159,
+              "completion_tokens": 57,
               "total_tokens": 216
             }
           },
@@ -440,8 +440,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "If I had the opportunity, I would build a single-story house! The only things stopping you are the nature of the plot and the finances. You could build in split-levels (half stairs), making it almost single-story, but you avoid those troublesome stairs!\n\nIf the choice is also between a single-story and a 1½-story house, I wouldn't hesitate at all, sorry, but 1½-story homes are in my opinion not very beautiful buildings, is there anything more dreary and unimaginative...:-X. Having sloped ceilings indoors doesn't feel very fun either...\n\nWe live in a single-story house today (not so big, 140 sqm), and we're absolutely thrilled with it! It provides incredible spaciousness, the house seems larger and airier. Our new build will instead be a hillside house (this due to the nature of the plot) of 240 sqm, and I think it will be a bit sad having stairs, but in this case we have no choice.\n\nGood luck!\n:)",
             "tokens": {
-              "input_tokens": 395,
-              "output_tokens": 235,
+              "prompt_tokens": 395,
+              "completion_tokens": 235,
               "total_tokens": 630
             }
           },
@@ -482,8 +482,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "We have ordered a 1 3/4 house and as someone else wrote, we want a separate sleeping area. We have chosen FH Entitan of 135 square meters, mainly because the municipality has very high requirements for the appearance of our house, otherwise I would probably have chosen FH Doppingen.\n\nGood luck ;)",
             "tokens": {
-              "input_tokens": 193,
-              "output_tokens": 76,
+              "prompt_tokens": 193,
+              "completion_tokens": 76,
               "total_tokens": 269
             }
           },
@@ -524,8 +524,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "We'll probably build a 1 3/4 story or 2 story house. Today we live in a single-story house and we want to separate the bedrooms from the common living areas. It's nice to have bedrooms etc. on the second floor so you don't have to deep clean everything when people come to visit! ;D\nFurthermore, I think it's more comfortable to have the bedroom on the upper floor to avoid people looking in.\nIt's also cheaper, the foundation becomes half the size and not to forget the heat that rises upward = hopefully lower electricity costs.\nBut as they say, to each their own! ;)",
             "tokens": {
-              "input_tokens": 286,
-              "output_tokens": 140,
+              "prompt_tokens": 286,
+              "completion_tokens": 140,
               "total_tokens": 426
             }
           },
@@ -566,8 +566,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "We have chosen to build a 1.5-story house, Smålandsvillan's \"Västervik\", for the simple reason that we want the children's rooms and playroom on the upper floor.\nWhile the ground floor is for dining area, social spaces and similar.\nWe currently live in a single-story house and find that it somehow doesn't become very secluded.\n\nbut as the previous writer wrote \"taste is like the butt\" 8-)",
             "tokens": {
-              "input_tokens": 222,
-              "output_tokens": 105,
+              "prompt_tokens": 222,
+              "completion_tokens": 105,
               "total_tokens": 327
             }
           },
@@ -608,8 +608,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "We first chose a 1½-story house but changed our minds along the way when we realized that the stairs + sloped ceiling would steal too much space and money. Instead, we opted for a self-designed 1-story house with an open floor plan between the living room and kitchen. Children's section with 2 bedrooms, play room and bathroom, parents' section with 2 bedrooms (1 large, 1 small), bathroom and walk-in closet. This resulted in approximately 100,000-150,000:- in additional cost for the 1-story house, but then we also got a custom-designed house. The house is 153 sqm.\n\nDahlino\np.s. we will be building with Mjöbäcksvillan d.s.",
             "tokens": {
-              "input_tokens": 301,
-              "output_tokens": 179,
+              "prompt_tokens": 301,
+              "completion_tokens": 179,
               "total_tokens": 480
             }
           },
@@ -650,8 +650,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "Stairs are evil. Whatever I need, there's a staircase between me and what I need. After having endured walkout basement houses, third-floor apartments, second-floor apartments, single-level houses with attics and basement levels, 1½-story houses, 1½-story houses with basements, and two-story houses, I know: I have run up and down what I should in stairs. Not one more staircase as long as I can defend myself!",
             "tokens": {
-              "input_tokens": 228,
-              "output_tokens": 107,
+              "prompt_tokens": 228,
+              "completion_tokens": 107,
               "total_tokens": 335
             }
           },
@@ -692,8 +692,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "Hi,\n\nIf you choose a 1 1/2-story house with a mansard roof, you get significantly more space on the upper floor than a traditional sloping roof house. We are building a large 1 3/4-story house with full standing height all the way to the wall.\n\nRegarding stairs or not, that is indeed a divided subject..",
             "tokens": {
-              "input_tokens": 199,
-              "output_tokens": 81,
+              "prompt_tokens": 199,
+              "completion_tokens": 81,
               "total_tokens": 280
             }
           },
@@ -734,8 +734,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "To balance the discussion a bit, I must say that I like having multiple floors :)\n\nHowever, I want all necessary spaces to be on the ground floor (including our bedrooms) so that you don't have to run up and down stairs in the morning and evening, but I think it's very nice to be able to go to another floor as well - which feels separate and different from the ground floor.\n\nThen again, we don't have the building rights required for us to build as large as we want in one floor either, but even if we had, we would actually have chosen an additional floor.",
             "tokens": {
-              "input_tokens": 274,
-              "output_tokens": 128,
+              "prompt_tokens": 274,
+              "completion_tokens": 128,
               "total_tokens": 402
             }
           },
@@ -774,8 +774,8 @@
       "claude-3-7-sonnet-latest": {
         "text": "Thread for wall lamp max 80w.",
         "tokens": {
-          "input_tokens": 108,
-          "output_tokens": 12,
+          "prompt_tokens": 108,
+          "completion_tokens": 12,
           "total_tokens": 120
         }
       },
@@ -820,8 +820,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "Hello.\n\nI know that the minimum cable area for installation is 1.5mm² since it's currently fused with >10A.\nBut what rules apply to a wall lamp?\nIt's labeled max 80W and is installed \"permanently\".\n\n1.5mm² feels very excessively thick and extremely oversized.\nCan you use 0.5mm² marked 300V?\n\nAs a switch wire and neutral from a junction box in the wall with a switch.\n\nSpontaneously it doesn't seem okay but someone here might know better and can confirm if it's legal?",
             "tokens": {
-              "input_tokens": 263,
-              "output_tokens": 131,
+              "prompt_tokens": 263,
+              "completion_tokens": 131,
               "total_tokens": 394
             }
           },
@@ -862,8 +862,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "It is not possible to compromise on the requirement for installation wires, but when we talk about connection wires, the consumer can allow a smaller cross-section. 0.5 mm² is fine if the lamp manufacturer approves it. A connection wire should also be a maximum of 2 meters long and be visible throughout its entire length, possibly placed in a cable tray.\n\nA connection wire needs a junction box, which is fed by an installation wire. If you have a recessed box with a switch, you need another box next to it that can function as a junction box, or even better, a (lamp) outlet near the lamp.",
             "tokens": {
-              "input_tokens": 281,
-              "output_tokens": 139,
+              "prompt_tokens": 281,
+              "completion_tokens": 139,
               "total_tokens": 420
             }
           },
@@ -904,8 +904,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "[QUOTE=\"Bo.Siltberg, post: 3872762, member: 45012\"]... A connection wire should also be max 2 meters long ...\n[/QUOTE]\nCurious, is this a must or a should? Considering that in stores it's common with 3 and 5 meter long lamp cord sets.",
             "tokens": {
-              "input_tokens": 186,
-              "output_tokens": 81,
+              "prompt_tokens": 186,
+              "completion_tokens": 81,
               "total_tokens": 267
             }
           },
@@ -946,8 +946,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "Is a must\nLamp cord must not be permanently installed\nBo has given you the answer",
             "tokens": {
-              "input_tokens": 117,
-              "output_tokens": 22,
+              "prompt_tokens": 117,
+              "completion_tokens": 22,
               "total_tokens": 139
             }
           },
@@ -988,8 +988,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "[QUOTE=\"Uffe A, post: 3872810, member: 167510\"]It's a must\nLamp cord must not be permanently installed\nBo has given you the answer[/QUOTE]\nI think you answered me? Not the OP, just a side question, please read carefully again :)",
             "tokens": {
-              "input_tokens": 175,
-              "output_tokens": 73,
+              "prompt_tokens": 175,
+              "completion_tokens": 73,
               "total_tokens": 248
             }
           },
@@ -1030,8 +1030,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "[QUOTE=\"MrHamfelt, post: 3872820, member: 308373\"]I think you answered me? Not the OP, just a side question, read it carefully again :)[/QUOTE]\nI answered you because you asked if it was a shall or should",
             "tokens": {
-              "input_tokens": 171,
-              "output_tokens": 67,
+              "prompt_tokens": 171,
+              "completion_tokens": 67,
               "total_tokens": 238
             }
           },
@@ -1072,8 +1072,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "[QUOTE=\"Uffe A, post: 3872853, member: 167510\"]I answered you because you asked if it was a shall or should[/QUOTE]\nWell, read WHAT I was wondering was a shall or should, namely max 2 m length on the connection cable.",
             "tokens": {
-              "input_tokens": 176,
-              "output_tokens": 70,
+              "prompt_tokens": 176,
+              "completion_tokens": 70,
               "total_tokens": 246
             }
           },
@@ -1114,8 +1114,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "Thank you all for your answers and interesting discussions.\nIt will be 1.5mm² in conduit then.\n\nIt's two wall sconces that will be on either side of a mirror. Bernadotte type completely in ceramic.\nThey are bought used and included with the purchase were 0.5mm² cable stubs.\nThat's why I started wondering.\n\nBy the way, what gauge were the cables in the old 6A systems?",
             "tokens": {
-              "input_tokens": 222,
-              "output_tokens": 101,
+              "prompt_tokens": 222,
+              "completion_tokens": 101,
               "total_tokens": 323
             }
           },
@@ -1156,8 +1156,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "In times of war, the cross-sectional area of installation wires was reduced to 1 mm², which I assume was fused at 6 A. Today, 6 A has no common application, except possibly for extremely long wires.\n\n[QUOTE=\"MrHamfelt, post: 3872802, member: 308373\"]Curious, is this a shall or should? I'm asking because 3 and 5 meter long lamp cord sets are common in stores.[/QUOTE]\nThe requirement comes from SS-EN 60335-1. I was being a bit loose with the 2 meters, it only applies in certain cases.\n\n[I]25.8 Conductors of supply cords [B]shall[/B] have a nominal cross-sectional area not less than that shown in Table 11.[/I]\n\n[ATTACH=full]446059[/ATTACH]",
             "tokens": {
-              "input_tokens": 328,
-              "output_tokens": 209,
+              "prompt_tokens": 328,
+              "completion_tokens": 209,
               "total_tokens": 537
             }
           },
@@ -1198,8 +1198,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "[QUOTE=\"Bo.Siltberg, post: 3872921, member: 45012\"]In wartime they reduced the area of installation wires to 1 mm² which I assume were fused with 6 A. Today, 6 A has no common application, except possibly for extremely long wires.\n\nThe requirement comes from SS-EN 60335-1. I was a bit expansive with 2 meters, it only applies in certain cases.\n\n[I]25.8 Conductors of supply cords [B]shall[/B] have a nominal cross-sectional area not less than that shown in Table 11.[/I]\n\n[ATTACH=full]446059[/ATTACH][/QUOTE]\nClear and good table, thanks for the answer!",
             "tokens": {
-              "input_tokens": 302,
-              "output_tokens": 181,
+              "prompt_tokens": 302,
+              "completion_tokens": 181,
               "total_tokens": 483
             }
           },
@@ -1240,8 +1240,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "The table states that 1.5mm² is ok for up to 16A.\nAnd that 2.5mm² is ok for higher currents than 16A, up to 25A.\nCan you rely on that?",
             "tokens": {
-              "input_tokens": 156,
-              "output_tokens": 55,
+              "prompt_tokens": 156,
+              "completion_tokens": 55,
               "total_tokens": 211
             }
           },
@@ -1282,8 +1282,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "[QUOTE=\"Huddingebo, post: 3872965, member: 141272\"]The table there states that 1.5mm² is ok for up to 16A.\nAnd that 2.5mm² is ok for higher currents than 16A, up to 25A.\nCan you rely on that?[/QUOTE]\nYes, you have understood that this only applies to a short connection cable?\n\nSuch as one that has a plug at the end or is permanently connected in a junction box.",
             "tokens": {
-              "input_tokens": 231,
-              "output_tokens": 120,
+              "prompt_tokens": 231,
+              "completion_tokens": 120,
               "total_tokens": 351
             }
           },
@@ -1324,8 +1324,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "Ah! There you see \nThanks!",
             "tokens": {
-              "input_tokens": 108,
-              "output_tokens": 13,
+              "prompt_tokens": 108,
+              "completion_tokens": 13,
               "total_tokens": 121
             }
           },
@@ -1366,8 +1366,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "The table only indicates load current, and a cable's load capacity depends on its cooling. Its length has no significance. An exposed or \"loose\" cable with a cross-section of 1.5 mm² can handle 18-19 A. If you move the cable inside a wall panel, the load capacity drops to about 14 A. Therefore we have the rule of thumb 1.5 mm² / 10 A.\n\nYou should also look at the short-circuit current at the far end of the cable, i.e., in the device. It is good if the current becomes high enough that the fuse trips within a reasonable time. Here, length and cross-section matter, but not the cable's cooling. Therefore, connection cables should be kept short.",
             "tokens": {
-              "input_tokens": 306,
-              "output_tokens": 168,
+              "prompt_tokens": 306,
+              "completion_tokens": 168,
               "total_tokens": 474
             }
           },
@@ -1406,8 +1406,8 @@
       "claude-3-7-sonnet-latest": {
         "text": "Instruction corrugated metal sheet.",
         "tokens": {
-          "input_tokens": 105,
-          "output_tokens": 11,
+          "prompt_tokens": 105,
+          "completion_tokens": 11,
           "total_tokens": 116
         }
       },
@@ -1452,8 +1452,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "Clay tile roof, new felt paper, new battens needed = instructions on how to attach valley flashing around a dormer window.",
             "tokens": {
-              "input_tokens": 133,
-              "output_tokens": 30,
+              "prompt_tokens": 133,
+              "completion_tokens": 30,
               "total_tokens": 163
             }
           },
@@ -1494,8 +1494,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "call a sheet metal worker",
             "tokens": {
-              "input_tokens": 99,
-              "output_tokens": 8,
+              "prompt_tokens": 99,
+              "completion_tokens": 8,
               "total_tokens": 107
             }
           },
@@ -1536,8 +1536,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "[url]http://www.byggahus.se/forum/tak-vind/32030-montera-raenndalsplatar.html[/url]",
             "tokens": {
-              "input_tokens": 132,
-              "output_tokens": 41,
+              "prompt_tokens": 132,
+              "completion_tokens": 41,
               "total_tokens": 173
             }
           },
@@ -1578,8 +1578,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "[quote=\"ByggaNytt, post: 465504\"][url]http://www.byggahus.se/forum/tak-vind/32030-montera-raenndalsplatar.html[/url][/QUOTE]\n\nThe image you attached at that time has, quite conveniently, disappeared now :D",
             "tokens": {
-              "input_tokens": 176,
-              "output_tokens": 79,
+              "prompt_tokens": 176,
+              "completion_tokens": 79,
               "total_tokens": 255
             }
           },
@@ -1620,8 +1620,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "Well, there were some nails/screws earlier and it wasn't much of a picture either but here it is...\n[url]http://www.familjenlindstrom.se/images/byggahus/tak/ranndal.jpg[/url]",
             "tokens": {
-              "input_tokens": 155,
-              "output_tokens": 62,
+              "prompt_tokens": 155,
+              "completion_tokens": 62,
               "total_tokens": 217
             }
           },
@@ -1662,8 +1662,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "Thank you but it was a bit difficult to see..\n\nDo you fold the sheet at the top?",
             "tokens": {
-              "input_tokens": 119,
-              "output_tokens": 24,
+              "prompt_tokens": 119,
+              "completion_tokens": 24,
               "total_tokens": 143
             }
           },
@@ -1704,8 +1704,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "Yep, it's folded where they meet!\nI'm currently working on facade work and can easily jump up and take some pictures, I'll get back to you in a few hours:)",
             "tokens": {
-              "input_tokens": 144,
-              "output_tokens": 45,
+              "prompt_tokens": 144,
+              "completion_tokens": 45,
               "total_tokens": 189
             }
           },
@@ -1746,8 +1746,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "Here are some close-ups, NOTE that all roof work (ridge tiles etc.) is not quite finished yet...\n\nThe sheet metal is made/installed by a real sheet metal professional!\n\n[IMG]http://www.familjenlindstrom.se/images/byggahus/tak/ranndal_smal_1.jpg[/IMG]\n\n[IMG]http://www.familjenlindstrom.se/images/byggahus/tak/ranndal_smal_2.jpg[/IMG]\n\n[IMG]http://www.familjenlindstrom.se/images/byggahus/tak/ranndal_smal_3.jpg[/IMG]",
             "tokens": {
-              "input_tokens": 267,
-              "output_tokens": 158,
+              "prompt_tokens": 267,
+              "completion_tokens": 158,
               "total_tokens": 425
             }
           },
@@ -1788,8 +1788,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "Awesome.. thanks",
             "tokens": {
-              "input_tokens": 101,
-              "output_tokens": 7,
+              "prompt_tokens": 101,
+              "completion_tokens": 7,
               "total_tokens": 108
             }
           },
@@ -1828,8 +1828,8 @@
       "claude-3-7-sonnet-latest": {
         "text": "Stickers",
         "tokens": {
-          "input_tokens": 97,
-          "output_tokens": 6,
+          "prompt_tokens": 97,
+          "completion_tokens": 6,
           "total_tokens": 103
         }
       },
@@ -1874,8 +1874,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "For those who want to pimp their am I found this, haven't bought from there though... Yet\n[url]http://www.spindrift.se/?product_cat=grasklippare[/url]",
             "tokens": {
-              "input_tokens": 150,
-              "output_tokens": 51,
+              "prompt_tokens": 150,
+              "completion_tokens": 51,
               "total_tokens": 201
             }
           },
@@ -1916,8 +1916,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "There were more pictures on their fb page",
             "tokens": {
-              "input_tokens": 106,
-              "output_tokens": 11,
+              "prompt_tokens": 106,
+              "completion_tokens": 11,
               "total_tokens": 117
             }
           },
@@ -1956,8 +1956,8 @@
       "claude-3-7-sonnet-latest": {
         "text": "Find suppliers of fan coil units",
         "tokens": {
-          "input_tokens": 109,
-          "output_tokens": 10,
+          "prompt_tokens": 109,
+          "completion_tokens": 10,
           "total_tokens": 119
         }
       },
@@ -2002,8 +2002,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "In connection with the installation of geothermal heating with solar collectors, I thought about utilizing the borehole for free cooling. Solar collectors + buffer tank are already in place.\n\nI live in a brick house with a flat roof and around 1 o'clock in the day it starts to get warm.\nThis heat will increase day by day if not cooled.\n\nSince I am more or less housebound and heat makes my condition worse, a good indoor climate is essential.\n\nHow do you find suitable fan coil units to evaluate?\nI've talked to some HVAC guys and they seem to be very locked into the brands they work with. Those who work with geothermal heating don't seem to understand the cooling part.\n\nSound level, size, and ceiling placement are important to me.\n\nWhen it comes to sound, the design is essential.\n\nWhat information is required to dimension it myself?\nIs there any good cheat sheet/compilation available?\n\n/Per",
             "tokens": {
-              "input_tokens": 383,
-              "output_tokens": 211,
+              "prompt_tokens": 383,
+              "completion_tokens": 211,
               "total_tokens": 594
             }
           },
@@ -2044,8 +2044,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "Answers to all your questions can be found here.\n[url]http://www.varmepumpsforum.com/vpforum/index.php?board=43.0[/url]",
             "tokens": {
-              "input_tokens": 144,
-              "output_tokens": 48,
+              "prompt_tokens": 144,
+              "completion_tokens": 48,
               "total_tokens": 192
             }
           },
@@ -2086,8 +2086,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "Linnex is right. Here comes my thread from that forum about how I have done regarding free cooling. Note the title of the thread for my free cooling so you know what I think... =)\n\n[url]http://www.varmepumpsforum.com/vpforum/index.php?topic=16192.0[/url]\n\nAt [url]www.kinnan.se[/url] there are excellent fan coil units for dual systems heating+cooling and they have AWESOME and friendly support. The only disadvantage is that you must have a company to be able to shop from there, or know someone with a company who can purchase from there for you. =)\n\n//Rob",
             "tokens": {
-              "input_tokens": 288,
-              "output_tokens": 154,
+              "prompt_tokens": 288,
+              "completion_tokens": 154,
               "total_tokens": 442
             }
           },
@@ -2126,8 +2126,8 @@
       "claude-3-7-sonnet-latest": {
         "text": "Asko D8437I dishwasher F10 error",
         "tokens": {
-          "input_tokens": 108,
-          "output_tokens": 18,
+          "prompt_tokens": 108,
+          "completion_tokens": 18,
           "total_tokens": 126
         }
       },
@@ -2172,8 +2172,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "I have an approximately 7-year-old Asko dishwasher that occasionally gets an F10 error, meaning the pump continues to run when the program is finished and you have to unplug it to turn it off. Water collects at the bottom of the machine, and if you remove it, it works for about 1 week again. I removed the back panel and ran a short program. I then saw that water is dripping from the spray arm exchanger, see video. Anyone familiar with this issue and knows what\n[ATTACH type=\"full\"]838056[/ATTACH]\nthe problem might be? Worth repairing or should I buy a new one is the question 🙂 Grateful for help.",
             "tokens": {
-              "input_tokens": 280,
-              "output_tokens": 161,
+              "prompt_tokens": 280,
+              "completion_tokens": 161,
               "total_tokens": 441
             }
           },
@@ -2214,8 +2214,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "Write exactly which machine it is, so maybe you can get a good answer. Asko has manufactured more than one model.",
             "tokens": {
-              "input_tokens": 134,
-              "output_tokens": 29,
+              "prompt_tokens": 134,
+              "completion_tokens": 29,
               "total_tokens": 163
             }
           },
@@ -2256,8 +2256,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "[QUOTE=\"MultiMan, post: 5936703, member: 112385\"]\nWrite exactly which machine it is, so you might get a good answer. Asko has manufactured more than one model\n[/QUOTE]\nYes, that would be good 🙂 Asko D8437I",
             "tokens": {
-              "input_tokens": 181,
-              "output_tokens": 73,
+              "prompt_tokens": 181,
+              "completion_tokens": 73,
               "total_tokens": 254
             }
           },
@@ -2298,8 +2298,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "[QUOTE=\"Conny81, post: 5936673, member: 139810\"]\nI have an approximately 7-year-old Asko dishwasher that occasionally gets F10 error, meaning the pump continues to run when the program is finished and you have to unplug it to turn it off. Water collects at the bottom of the machine and if you get it out, it works for about 1 week again. I removed the back plate and ran a short program. I then saw that water is dripping from the spray arm exchanger, see video. Anyone familiar with this and knows what\n[ATTACH type=\"full\"]838056[/ATTACH]\nthe problem could be? Worth repairing or buying new is the question 🙂 Grateful for help.\n[/QUOTE]\nextremely common problem all Asko models have this\nyou need to replace the spray arm exchanger to restore full functionality\nyou also have the Chinese manufacturing and they have had tons of these kinds of problems",
             "tokens": {
-              "input_tokens": 372,
-              "output_tokens": 226,
+              "prompt_tokens": 372,
+              "completion_tokens": 226,
               "total_tokens": 598
             }
           },
@@ -2340,8 +2340,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "Ok thanks for the answer! Maybe worth trying and changing it then 🙂",
             "tokens": {
-              "input_tokens": 118,
-              "output_tokens": 20,
+              "prompt_tokens": 118,
+              "completion_tokens": 20,
               "total_tokens": 138
             }
           },
@@ -2382,8 +2382,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "[QUOTE=\"Conny81, post: 5937468, member: 139810\"]\nOk thanks for the answer! Maybe worth testing and changing it then 🙂\n[/QUOTE]\nabsolutely",
             "tokens": {
-              "input_tokens": 150,
-              "output_tokens": 51,
+              "prompt_tokens": 150,
+              "completion_tokens": 51,
               "total_tokens": 201
             }
           },
@@ -2424,8 +2424,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "[QUOTE=\"returen, post: 5937408, member: 698441\"]\nextremely common fault all asko models have this\nyou need to change the spray arm distributor to restore full function\nyou also have the Chinese manufacturing and they have had all kinds of these faults\n[/QUOTE]\nHow do you see/know if it's a China Asko?",
             "tokens": {
-              "input_tokens": 204,
-              "output_tokens": 86,
+              "prompt_tokens": 204,
+              "completion_tokens": 86,
               "total_tokens": 290
             }
           },
@@ -2466,8 +2466,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "[QUOTE=\"Hyppe, post: 6050679, member: 63614\"]\nHow do you see/know if it is a China Asko?\n[/QUOTE]\nYou won't get an answer from \"\"\"  Returen \"\"\"  they are banned on BH.",
             "tokens": {
-              "input_tokens": 165,
-              "output_tokens": 68,
+              "prompt_tokens": 165,
+              "completion_tokens": 68,
               "total_tokens": 233
             }
           },
@@ -2508,8 +2508,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "[QUOTE=\"jonaserik, post: 6050693, member: 224859\"]\nYou will not get an answer from \"\"\"  Returen \"\"\"  as they are banned on BH.\n[/QUOTE]\nAgain?? 🤔",
             "tokens": {
-              "input_tokens": 153,
-              "output_tokens": 61,
+              "prompt_tokens": 153,
+              "completion_tokens": 61,
               "total_tokens": 214
             }
           },
@@ -2550,8 +2550,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "[QUOTE=\"Conny81, post: 5936673, member: 139810\"]\nI have a ca 7 year old Asko dishwasher that occasionally gets an F10 error, meaning the pump continues to run when the program is finished and you have to unplug it to turn it off. Water collects at the bottom of the machine and if you get it out, it will work again for about 1 week. I have removed the plate at the back and run a short program. I then saw that water drips from the spray arm exchanger, see video. Anyone familiar with this and knows what\n[ATTACH type=\"full\"]838056[/ATTACH]\nthe problem might be? Worth repairing or buying new is the question 🙂 Grateful for help.\n[/QUOTE]\nHi.\nDid you fix the problem?\nI have the same issue and have replaced the spray arm exchanger but it continues to drip",
             "tokens": {
-              "input_tokens": 349,
-              "output_tokens": 217,
+              "prompt_tokens": 349,
+              "completion_tokens": 217,
               "total_tokens": 566
             }
           },
@@ -2592,8 +2592,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "[QUOTE=\"Rikard D, post: 6052602, member: 753889\"]\nHi.\nDid you fix the error?\nI have the same error and have changed the spray arm switch but it continues to drip\n[/QUOTE]\nUnfortunately not, it became a new machine 🙂",
             "tokens": {
-              "input_tokens": 179,
-              "output_tokens": 74,
+              "prompt_tokens": 179,
+              "completion_tokens": 74,
               "total_tokens": 253
             }
           },
@@ -2634,8 +2634,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "[QUOTE=\"Kane, post: 6050706, member: 76960\"]\nAgain?? 🤔\n[/QUOTE]\nThe forum owner is interesting to say the least\nif you wish the OP good luck you're considered rude and get a warning\nif you question this you get suspended\ncompletely arbitrary\n\nIf you can point out a serious error in a post\nyou're being rude\nif you stand your ground you get suspended\n\ni.e. correct factual posts aren't important here, just the number of them, all for the clicks...\njust look at jon-e's\n\nbut now let's take a shout and oil the drag strip!",
             "tokens": {
-              "input_tokens": 274,
-              "output_tokens": 150,
+              "prompt_tokens": 274,
+              "completion_tokens": 150,
               "total_tokens": 424
             }
           },
@@ -2674,8 +2674,8 @@
       "claude-3-7-sonnet-latest": {
         "text": "Hole for mixer Ikea sink",
         "tokens": {
-          "input_tokens": 108,
-          "output_tokens": 11,
+          "prompt_tokens": 108,
+          "completion_tokens": 11,
           "total_tokens": 119
         }
       },
@@ -2720,8 +2720,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "Hello!\nI just bought Ikea Olofsjön, sink.\nStarted cutting a hole with a 35 mm hole saw, but it's not going very smoothly. According to Ikea's instructions, you should make the hole with their \"fixa\" hole cutter...\nShould I just continue with the hole saw or do I need to go to Ikea again to buy their tool? Attaching pictures.\nThanks!!",
             "tokens": {
-              "input_tokens": 224,
-              "output_tokens": 99,
+              "prompt_tokens": 224,
+              "completion_tokens": 99,
               "total_tokens": 323
             }
           },
@@ -2762,8 +2762,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "Hole saw and stainless steel not a good combination, the saw becomes dull almost instantly, if you oil it properly it may work, otherwise a hole punch (IKEA calls it Fixa) is best, check the prices, they are available in the tool departments of most department stores. The hole in the middle serves as a guide hole and the punch's bolt then guides to the right spot.",
             "tokens": {
-              "input_tokens": 208,
-              "output_tokens": 88,
+              "prompt_tokens": 208,
+              "completion_tokens": 88,
               "total_tokens": 296
             }
           },
@@ -2804,8 +2804,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "Darn! Thanks for the answer!",
             "tokens": {
-              "input_tokens": 105,
-              "output_tokens": 12,
+              "prompt_tokens": 105,
+              "completion_tokens": 12,
               "total_tokens": 117
             }
           },
@@ -2846,8 +2846,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "Maybe you can borrow from a plumber in the neighborhood if there is one, they usually have one for kitchen sinks.",
             "tokens": {
-              "input_tokens": 127,
-              "output_tokens": 29,
+              "prompt_tokens": 127,
+              "completion_tokens": 29,
               "total_tokens": 156
             }
           },
@@ -2886,8 +2886,8 @@
       "claude-3-7-sonnet-latest": {
         "text": "stop somewhere?",
         "tokens": {
-          "input_tokens": 100,
-          "output_tokens": 6,
+          "prompt_tokens": 100,
+          "completion_tokens": 6,
           "total_tokens": 106
         }
       },
@@ -2932,8 +2932,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "Of course this happens when it's pouring rain and dark, so I can't go out and look in the well right away.\n\nWhen flushing several taps at the same time, the water rises in the floor drains in the basement. When flushing the toilet, it gurgles veeeeeery much.\n\nWe have a 2-chamber well with additional infiltration buried much later. I don't know where the infiltration is located because it's on the neighbor's property, so it hasn't been of interest to us before. They have their house as a vacation home.\n\nSpontaneously, what do you think, is the 2-chamber overfull when the toilet gurgles and rises in the basement? Could it have to do with the ventilation? It wasn't many months ago they came and emptied the 2-chamber, though he didn't touch the infiltration..",
             "tokens": {
-              "input_tokens": 331,
-              "output_tokens": 196,
+              "prompt_tokens": 331,
+              "completion_tokens": 196,
               "total_tokens": 527
             }
           },
@@ -2974,8 +2974,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "start by checking if the well is full of water,\nthen you have the problem in the infiltration.\nso if the incoming sewage pipe is under water then that's where the problem is..\nand if not then I would bet on flushing backwards into the house with a jetting truck. because then there is a blockage on the way in.",
             "tokens": {
-              "input_tokens": 187,
-              "output_tokens": 78,
+              "prompt_tokens": 187,
+              "completion_tokens": 78,
               "total_tokens": 265
             }
           },
@@ -3016,8 +3016,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "I'm aware that it might have been a bit silly to ask..could have started by looking in the well and then suspecting that it was on its way into the house, but anyway..\n\nIt turned out to be many times worse than that, the drain cleaner can't get into any well, it's completely blocked, according to him we have 'clay pipes', they have probably collapsed somewhere near the outer wall. Will have to dig and break up the shower.\n\nLucky I'm on vacation and haaaave nothing else to do :rolleyes:",
             "tokens": {
-              "input_tokens": 243,
-              "output_tokens": 119,
+              "prompt_tokens": 243,
+              "completion_tokens": 119,
               "total_tokens": 362
             }
           },
@@ -3058,8 +3058,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "if you have a \"cleanout pipe\" somewhere along the way try shooting in a drain snake and get some idea of where the blockage is, I don't believe in the collapse theory. but if you manage to locate where the blockage is, maybe it's enough to dig a hole and lift up the pipe, calm down a bit with breaking up concrete inside.",
             "tokens": {
-              "input_tokens": 186,
-              "output_tokens": 78,
+              "prompt_tokens": 186,
+              "completion_tokens": 78,
               "total_tokens": 264
             }
           },
@@ -3100,8 +3100,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "Made it without rerouting, there was just a blockage but the jetter got stuck in the joint between ceramic and cast iron pipes. Only needed to dig 2m and redo the joint :)",
             "tokens": {
-              "input_tokens": 151,
-              "output_tokens": 46,
+              "prompt_tokens": 151,
+              "completion_tokens": 46,
               "total_tokens": 197
             }
           },
@@ -3140,8 +3140,8 @@
       "claude-3-7-sonnet-latest": {
         "text": "Black + Orange cables in a box prepared for outdoor cable, right?",
         "tokens": {
-          "input_tokens": 116,
-          "output_tokens": 17,
+          "prompt_tokens": 116,
+          "completion_tokens": 17,
           "total_tokens": 133
         }
       },
@@ -3186,8 +3186,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "I bought a newly built house in 2006 and ordered some extra \"good to have\" electrical work. I want to be a bit informed before I have an electrician complete the job. (haven't been able to reach the electrician who did the work but I haven't finished \"hunting\" for him)\n- By the patio door: 15m cable extending from the foundation for future lighting needs in the garden. The cable reel is lying there and in the patio door frame there's a junction box cover that I understand we can replace with a switch later. I opened the junction box the other day to see what it looks like. Under the cover there are two \"wires\" that are capped. One black and one orange. Does this seem right and should it be a \"regular switch...? If I try to understand how it's connected, these are a type of \"remote cables\" that originate from a junction box with cables going out to the garden cable, and with a switch you complete the circuit... but I'm unsure about my theory when I see just those two hanging there and not more to connect :)\nFollow-up question; if we want to skip the switch and put an outlet there instead, what do we do then? (We and we, I mean what we should ask the electrician to do).\n\nOn the other side of the house we've prepared in the same way but in the frame there's already a switch for other lighting in the hallway, and I had interpreted it as we should connect the \"external\" cable there and then install a switch with two breakers. I removed the switch and checked, and there was an orange capped wire and \"all others\" were connected to the switch.\n\nCan someone sort this out? As I said, I will bring in an electrician but to satisfy my curiosity I would like to hear what you knowledgeable people say...\n\n/mbn",
             "tokens": {
-              "input_tokens": 643,
-              "output_tokens": 408,
+              "prompt_tokens": 643,
+              "completion_tokens": 408,
               "total_tokens": 1051
             }
           },
@@ -3228,8 +3228,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "The orange one is probably meant as an ignition wire I assume. If you want constant voltage, you could just strip them and put a Torix on it for example, but somewhere there must be a neutral wire as well, how have they solved that? Is there no blue inside the box? Also, there should be protective earth, so there must be a yellow-green wire drawn.",
             "tokens": {
-              "input_tokens": 200,
-              "output_tokens": 83,
+              "prompt_tokens": 200,
+              "completion_tokens": 83,
               "total_tokens": 283
             }
           },
@@ -3270,8 +3270,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "Cable outside is a ground cable EKKJ, forgot to write that.",
             "tokens": {
-              "input_tokens": 116,
-              "output_tokens": 19,
+              "prompt_tokens": 116,
+              "completion_tokens": 19,
               "total_tokens": 135
             }
           },
@@ -3312,8 +3312,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "It's probably drawn to a junction box and not directly to the switch box. Isn't there a junction box on the wall up by the ceiling somewhere near the intended switch?",
             "tokens": {
-              "input_tokens": 153,
-              "output_tokens": 39,
+              "prompt_tokens": 153,
+              "completion_tokens": 39,
               "total_tokens": 192
             }
           },
@@ -3354,8 +3354,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "I assume it's as you write with ignition wire and that all other connections are in one of the ceiling boxes we have.\nSo if you connect, for example, a lamp out there, is it a regular switch you put inside? Why do you have an orange and a black cable then?\n\nShould probably \"track down the electrician\" a bit more hehehe",
             "tokens": {
-              "input_tokens": 200,
-              "output_tokens": 80,
+              "prompt_tokens": 200,
+              "completion_tokens": 80,
               "total_tokens": 280
             }
           },
@@ -3396,8 +3396,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "Black is constant phase, and orange is ignition wire, i.e. it is only energized when you turn on the switch.",
             "tokens": {
-              "input_tokens": 129,
-              "output_tokens": 31,
+              "prompt_tokens": 129,
+              "completion_tokens": 31,
               "total_tokens": 160
             }
           },
@@ -3438,8 +3438,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "The black one is likely to be the phase and the orange one is intended as a trigger wire for the lighting. These two wires are likely to end up in the same junction box that the EKKJ is routed to if one intended to use it for lighting.",
             "tokens": {
-              "input_tokens": 160,
-              "output_tokens": 59,
+              "prompt_tokens": 160,
+              "completion_tokens": 59,
               "total_tokens": 219
             }
           },
@@ -3480,8 +3480,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "I don't know but somehow I get the impression that these \"cables\" are pull wires to other boxes as they seem to be the only wires in the boxes.",
             "tokens": {
-              "input_tokens": 138,
-              "output_tokens": 38,
+              "prompt_tokens": 138,
+              "completion_tokens": 38,
               "total_tokens": 176
             }
           },
@@ -3522,8 +3522,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "[quote=\"snuttjulle, post: 928761\"]Vet inte men på något vis får jag för mig att dessa \"kablar\" är dragtråd till andra dosor då det verkar vara de enda trådar i dosorna.[/quote]\n\nCould be so, since black should not have been used as phase when the house was built in 2006, but brown instead.",
             "tokens": {
-              "input_tokens": 186,
-              "output_tokens": 93,
+              "prompt_tokens": 186,
+              "completion_tokens": 93,
               "total_tokens": 279
             }
           },
@@ -3564,8 +3564,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "Run the black and orange in the same conduit so there are no pull wires, you don't put 2 pull wires = twice as expensive material.\n\nIf the wires go in different directions, they may well be pull wires.\n\nMy vote is that it's phase and ignition wire and the orange is spliced to the EKKJ somewhere in a junction box.\n\nWhy this concern about an orange wire, very common as an ignition wire nowadays.\nAnd black on the phase may depend on the age of the electrician, brown is just standard, not law\n\nProtte",
             "tokens": {
-              "input_tokens": 260,
-              "output_tokens": 130,
+              "prompt_tokens": 260,
+              "completion_tokens": 130,
               "total_tokens": 390
             }
           },
@@ -3606,8 +3606,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "As it appears, Protte is right. (I've checked some other places in the house and it's connected to the black wire.)\nWhat type of switch should be used in our case (the \"patio cord\")?",
             "tokens": {
-              "input_tokens": 156,
-              "output_tokens": 51,
+              "prompt_tokens": 156,
+              "completion_tokens": 51,
               "total_tokens": 207
             }
           },
@@ -3648,8 +3648,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "It's installed indoors (if I understand correctly). In that case, it's a completely ordinary light switch. These are now basically only available to buy as two-way switches. Meaning there is an extra output that you should not use.\n\nBut if you, against all odds, are considering doing something yourself here. Then the guesses in this thread are not sufficient. If you actually intend to connect something to this cable, you must KNOW how it is wired. This means you must verify that the cable is connected to Protective Ground, that it is connected to neutral, and that this orange switch wire is actually connected to the cable, so you must know what's at the other end of this wire. Otherwise, you might connect power to a wire that could be located anywhere in the house, with unexpected and dangerous consequences.\n\nYou must also verify that the cable is connected to a residual current device.",
             "tokens": {
-              "input_tokens": 374,
-              "output_tokens": 192,
+              "prompt_tokens": 374,
+              "completion_tokens": 192,
               "total_tokens": 566
             }
           },
@@ -3690,8 +3690,8 @@
           "claude-3-7-sonnet-latest": {
             "text": "Absolutely right mate, forum replies and guesses aren't always enough!\nBut my curiosity has been satisfied a little at least :)",
             "tokens": {
-              "input_tokens": 133,
-              "output_tokens": 32,
+              "prompt_tokens": 133,
+              "completion_tokens": 32,
               "total_tokens": 165
             }
           },

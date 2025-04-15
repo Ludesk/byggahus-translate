@@ -105,9 +105,12 @@ def main():
                     st.markdown("*No translation available*")
 
                 # Token usage
-                st.markdown(f"**Prompt tokens:** {post['message_english'][model]['tokens']['prompt_tokens']}")
-                st.markdown(f"**Completion tokens:** {post['message_english'][model]['tokens']['completion_tokens']}")
-                st.markdown(f"**Total tokens:** {post['message_english'][model]['tokens']['total_tokens']}")
+                if post['message_english'][model]['tokens']['prompt_tokens']:
+                    st.markdown(f"**Prompt tokens:** {post['message_english'][model]['tokens']['prompt_tokens']}")
+                if post['message_english'][model]['tokens']['completion_tokens']:
+                    st.markdown(f"**Completion tokens:** {post['message_english'][model]['tokens']['completion_tokens']}")
+                if post['message_english'][model]['tokens']['total_tokens']:
+                    st.markdown(f"**Total tokens:** {post['message_english'][model]['tokens']['total_tokens']}")
         
         st.markdown("---")
 

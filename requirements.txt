@@ -5,3 +5,4 @@ google-generativeai>=0.3.0
 deepseek-ai>=0.0.1
 streamlit>=1.32.0
 watchdog>=3.0.0
+pymongo>=4.6.0

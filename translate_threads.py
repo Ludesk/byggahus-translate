@@ -57,8 +57,8 @@ def translate_text(text, model_name):
             return {
                 "text": response.content[0].text,
                 "tokens": {
-                    "input_tokens": response.usage.input_tokens,
-                    "output_tokens": response.usage.output_tokens,
+                    "prompt_tokens": response.usage.input_tokens,
+                    "completion_tokens": response.usage.output_tokens,
                     "total_tokens": response.usage.input_tokens + response.usage.output_tokens
                 }
             }
@@ -119,8 +119,8 @@ def process_threads():
         try:
             with open(filename, 'r', encoding='utf-8') as f:
                 data = json.load(f)
-                # Only include threads with 20 or fewer posts
-                valid_threads = [thread for thread in data['threads'] if len(thread['posts']) <= 20]
+                # Only include threads with between 5 and 20 posts
+                valid_threads = [thread for thread in data['threads'] if 5 <= len(thread['posts']) <= 20]
                 threads.extend(valid_threads)
         except Exception as e:
             print(f"Error reading file {filename}: {str(e)}")
@@ -130,7 +130,7 @@ def process_threads():
         print("No valid threads found in the data files!")
         return
     
-    print(f"Found {len(threads)} threads with 20 or fewer posts")
+    print(f"Found {len(threads)} threads with 5-20 posts")
     
     # Select 10 random threads
     num_threads = min(10, len(threads))
@@ -166,6 +166,7 @@ def process_threads():
             continue
             
         print(f"\nProcessing thread {i} of {num_threads} (Thread ID: {thread['id']}, Posts: {len(thread['posts'])})...")
+        print(f"Thread date: {thread['last_post_date']}")
         
         translated_thread = {
             "id": thread["id"],

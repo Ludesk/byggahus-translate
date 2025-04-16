@@ -153,6 +153,17 @@ def get_all_vote_stats():
         return {result["_id"]: result["count"] for result in results}
     return {}
 
+def get_user_vote(thread_id, post_id, user_ip):
+    db = get_db()
+    if db is not None:
+        votes = list(db.votes.find({
+            "thread_id": thread_id,
+            "post_id": post_id,
+            "user_ip": user_ip
+        }))
+        return [vote["model"] for vote in votes]
+    return []
+
 def show_statistics():
     st.title("Translation Model Statistics")
     st.markdown("---")
@@ -188,12 +199,34 @@ def show_statistics():
     else:
         st.info("No votes have been cast yet.")
 
+def initialize_session_state():
+    if 'voted_posts' not in st.session_state:
+        st.session_state.voted_posts = set()
+    if 'user_votes' not in st.session_state:
+        st.session_state.user_votes = {}
+
+def get_user_vote_from_session(thread_id, post_id, model):
+    key = f"{thread_id}_{post_id}_{model}"
+    return st.session_state.user_votes.get(key, False)
+
+def save_user_vote_to_session(thread_id, post_id, model):
+    key = f"{thread_id}_{post_id}_{model}"
+    st.session_state.user_votes[key] = True
+
+def remove_user_vote_from_session(thread_id, post_id, model):
+    key = f"{thread_id}_{post_id}_{model}"
+    if key in st.session_state.user_votes:
+        del st.session_state.user_votes[key]
+
 def main():
     st.set_page_config(
         page_title="Forum Thread Translations",
         page_icon="🌐",
         layout="wide"
     )
+    
+    # Initialize session state
+    initialize_session_state()
     
     # Initialize MongoDB
     initialize_votes_collection()
@@ -262,47 +295,17 @@ def main():
             # Original post
             with post_columns[0]:
                 st.markdown("**Original Post**")
-                st.markdown(f"**User:** {post['username']}")
-                st.markdown("---")
+                st.markdown(f"<span style='color: gray; font-size: 0.9em'>User: {post['username']}</span>", unsafe_allow_html=True)
                 st.markdown(post['message'])
                 
-                # Voting for original post
-                st.markdown("---")
-                st.markdown("**Vote for this post**")
-                vote_options = [get_model_display_name(model, thread['id'], post['id']) for model in post_models]
-                selected_vote = st.radio(
-                    "Which translation is best?",
-                    options=vote_options,
-                    horizontal=True,
-                    key=f"vote_{post['id']}"
-                )
-                
-                if st.button("Submit Vote", key=f"submit_{post['id']}"):
-                    user_ip = st.query_params.get("ip", ["unknown"])[0]
-                    actual_model = get_actual_model_name(selected_vote, thread['id'], post['id'])
-                    save_vote(thread['id'], post['id'], actual_model, user_ip)
-                    st.success("Vote submitted successfully!")
-                    
-                    # After voting, reveal the voted model and show distribution
-                    st.markdown("**Your Vote:**")
-                    st.write(f"You voted for: {get_model_display_name(actual_model, thread['id'], post['id'], show_actual=True)}")
-                    
-                    # Add remove vote button
-                    if st.button("Remove Vote", key=f"remove_{post['id']}"):
-                        remove_vote(thread['id'], post['id'], user_ip)
-                        st.success("Vote removed successfully!")
-                        st.rerun()
-                    
-                    # Show voting distribution with hidden model names
+                # Show voting distribution under original column only if user has voted
+                post_key = f"{thread['id']}_{post['id']}"
+                if post_key in st.session_state.voted_posts:
                     vote_stats, total = get_vote_stats(thread['id'], post['id'])
                     if total > 0:
                         st.markdown("**Vote Distribution:**")
-                        for model, count in vote_stats.items():
-                            # Show actual name only for the model they voted for
-                            if model == actual_model:
-                                display_name = get_model_display_name(model, thread['id'], post['id'], show_actual=True)
-                            else:
-                                display_name = get_model_display_name(model, thread['id'], post['id'])
+                        for model_name, count in vote_stats.items():
+                            display_name = get_model_display_name(model_name, thread['id'], post['id'], show_actual=True)
                             percentage = (count / total) * 100
                             st.write(f"{display_name}: {count} votes ({percentage:.1f}%)")
             
@@ -311,21 +314,32 @@ def main():
                 with post_columns[i]:
                     display_name = get_model_display_name(model, thread['id'], post['id'])
                     st.markdown(f"**{display_name}**")
-                    st.markdown(f"**User:** {post['username']}")
-                    st.markdown("---")
+                    st.markdown(f"<span style='color: gray; font-size: 0.9em'>User: {post['username']}</span>", unsafe_allow_html=True)
                     if model in post['message_english']:
                         st.markdown(post['message_english'][model]['text'])
                     else:
                         st.markdown("*No translation available*")
+                    
+                    # Add vote button for this translation
+                    user_ip = st.query_params.get("ip", ["unknown"])[0]
+                    has_voted = get_user_vote_from_session(thread['id'], post['id'], model)
+                    
+                    if has_voted:
+                        if st.button("Remove Vote", key=f"remove_{post['id']}_{model}"):
+                            remove_vote(thread['id'], post['id'], user_ip)
+                            remove_user_vote_from_session(thread['id'], post['id'], model)
+                            st.success("Vote removed successfully!")
+                            st.rerun()
+                    else:
+                        if st.button("Vote for this translation", key=f"vote_{post['id']}_{model}"):
+                            save_vote(thread['id'], post['id'], model, user_ip)
+                            save_user_vote_to_session(thread['id'], post['id'], model)
+                            # Add this post to the voted_posts set
+                            post_key = f"{thread['id']}_{post['id']}"
+                            st.session_state.voted_posts.add(post_key)
+                            st.success("Vote submitted successfully!")
+                            st.rerun()
 
-                    # Token usage
-                    if post['message_english'][model]['tokens']['prompt_tokens']:
-                        st.markdown(f"<span style='color: gray; font-size: 0.9em'>Input tokens: {post['message_english'][model]['tokens']['prompt_tokens']}</span>", unsafe_allow_html=True)
-                    if post['message_english'][model]['tokens']['completion_tokens']:
-                        st.markdown(f"<span style='color: gray; font-size: 0.9em'>Output tokens: {post['message_english'][model]['tokens']['completion_tokens']}</span>", unsafe_allow_html=True)
-                    if post['message_english'][model]['tokens']['total_tokens']:
-                        st.markdown(f"<span style='color: gray; font-size: 0.9em'>Total tokens: {post['message_english'][model]['tokens']['total_tokens']}</span>", unsafe_allow_html=True)
-            
             st.markdown("---")
     else:
         show_statistics()

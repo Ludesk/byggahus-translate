@@ -314,6 +314,7 @@ def main():
                 with post_columns[i]:
                     display_name = get_model_display_name(model, thread['id'], post['id'])
                     st.markdown(f"**{display_name}**")
+                    
                     st.markdown(f"<span style='color: gray; font-size: 0.9em'>User: {post['username']}</span>", unsafe_allow_html=True)
                     if model in post['message_english']:
                         st.markdown(post['message_english'][model]['text'])
@@ -325,13 +326,13 @@ def main():
                     has_voted = get_user_vote_from_session(thread['id'], post['id'], model)
                     
                     if has_voted:
-                        if st.button("Remove Vote", key=f"remove_{post['id']}_{model}"):
+                        if st.button("Remove Vote", key=f"remove_{post['id']}_{model}", type="primary", use_container_width=True):
                             remove_vote(thread['id'], post['id'], user_ip)
                             remove_user_vote_from_session(thread['id'], post['id'], model)
                             st.success("Vote removed successfully!")
                             st.rerun()
                     else:
-                        if st.button("Vote for this translation", key=f"vote_{post['id']}_{model}"):
+                        if st.button("Vote for this translation", key=f"vote_{post['id']}_{model}", use_container_width=True):
                             save_vote(thread['id'], post['id'], model, user_ip)
                             save_user_vote_to_session(thread['id'], post['id'], model)
                             # Add this post to the voted_posts set
@@ -339,6 +340,11 @@ def main():
                             st.session_state.voted_posts.add(post_key)
                             st.success("Vote submitted successfully!")
                             st.rerun()
+                    
+                    # Show model name in gray if user has voted
+                    post_key = f"{thread['id']}_{post['id']}"
+                    if post_key in st.session_state.voted_posts:
+                        st.markdown(f"<span style='color: gray; font-size: 0.9em'>Model: {model}</span>", unsafe_allow_html=True)
 
             st.markdown("---")
     else:

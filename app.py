@@ -103,34 +103,38 @@ def get_translation_models(thread):
         models.update(post['message_english'].keys())
     return list(models)
 
-def get_randomized_models(models, thread_id):
-    """Get a randomized list of models for the current thread"""
+def get_randomized_models(models, thread_id, post_id=None):
+    """Get a randomized list of models for the current thread and post"""
     if 'randomized_models' not in st.session_state:
         st.session_state.randomized_models = {}
     
-    if thread_id not in st.session_state.randomized_models:
-        st.session_state.randomized_models[thread_id] = random.sample(models, len(models))
+    # Create a unique key for thread or thread+post
+    key = f"{thread_id}_{post_id}" if post_id is not None else thread_id
     
-    return st.session_state.randomized_models[thread_id]
+    if key not in st.session_state.randomized_models:
+        st.session_state.randomized_models[key] = random.sample(models, len(models))
+    
+    return st.session_state.randomized_models[key]
 
-def get_model_display_name(model, thread_id, show_actual=False):
+def get_model_display_name(model, thread_id, post_id=None, show_actual=False):
     """Get the display name for a model based on its position in the randomized list"""
     # Get the position in the randomized list
-    position = st.session_state.randomized_models[thread_id].index(model) + 1
+    position = st.session_state.randomized_models[f"{thread_id}_{post_id}" if post_id is not None else thread_id].index(model) + 1
     display_name = f"Model {chr(64 + position)}"  # 65 is ASCII for 'A'
     
     if show_actual:
         return f"{display_name} ({model})"
     return display_name
 
-def get_actual_model_name(display_name, thread_id):
+def get_actual_model_name(display_name, thread_id, post_id=None):
     """Get the actual model name from the display name"""
     # Extract the position from the display name (e.g., "Model A" -> 1)
     position = ord(display_name.split()[-1]) - 64  # Convert 'A' to 1, 'B' to 2, etc.
     
     # Get the model at this position in the randomized list
-    if thread_id in st.session_state.randomized_models:
-        models = st.session_state.randomized_models[thread_id]
+    key = f"{thread_id}_{post_id}" if post_id is not None else thread_id
+    if key in st.session_state.randomized_models:
+        models = st.session_state.randomized_models[key]
         if 0 < position <= len(models):
             return models[position - 1]
     return display_name  # Fallback to the display name if no match found
@@ -221,7 +225,7 @@ def main():
         # Get all translation models used in this thread
         models = get_translation_models(thread)
         
-        # Get randomized models for this thread
+        # Get randomized models for thread title
         randomized_models = get_randomized_models(models, thread['id'])
         
         # Create columns for original and each translation model
@@ -245,9 +249,12 @@ def main():
         # Display posts
         for post in thread['posts']:
             if post['position'] == 0:
-                st.markdown(f"### Fråga")
+                st.markdown(f"### Question")
             else:
-                st.markdown(f"### Svar {post['position']}")
+                st.markdown(f"### Post {post['position']}")
+            
+            # Get randomized models for this post
+            post_models = get_randomized_models(models, thread['id'], post['id'])
             
             # Create columns for this post
             post_columns = st.columns(1 + len(models))
@@ -262,7 +269,7 @@ def main():
                 # Voting for original post
                 st.markdown("---")
                 st.markdown("**Vote for this post**")
-                vote_options = [get_model_display_name(model, thread['id']) for model in randomized_models]
+                vote_options = [get_model_display_name(model, thread['id'], post['id']) for model in post_models]
                 selected_vote = st.radio(
                     "Which translation is best?",
                     options=vote_options,
@@ -272,13 +279,13 @@ def main():
                 
                 if st.button("Submit Vote", key=f"submit_{post['id']}"):
                     user_ip = st.query_params.get("ip", ["unknown"])[0]
-                    actual_model = get_actual_model_name(selected_vote, thread['id'])
+                    actual_model = get_actual_model_name(selected_vote, thread['id'], post['id'])
                     save_vote(thread['id'], post['id'], actual_model, user_ip)
                     st.success("Vote submitted successfully!")
                     
                     # After voting, reveal the voted model and show distribution
                     st.markdown("**Your Vote:**")
-                    st.write(f"You voted for: {get_model_display_name(actual_model, thread['id'], show_actual=True)}")
+                    st.write(f"You voted for: {get_model_display_name(actual_model, thread['id'], post['id'], show_actual=True)}")
                     
                     # Add remove vote button
                     if st.button("Remove Vote", key=f"remove_{post['id']}"):
@@ -293,16 +300,16 @@ def main():
                         for model, count in vote_stats.items():
                             # Show actual name only for the model they voted for
                             if model == actual_model:
-                                display_name = get_model_display_name(model, thread['id'], show_actual=True)
+                                display_name = get_model_display_name(model, thread['id'], post['id'], show_actual=True)
                             else:
-                                display_name = get_model_display_name(model, thread['id'])
+                                display_name = get_model_display_name(model, thread['id'], post['id'])
                             percentage = (count / total) * 100
                             st.write(f"{display_name}: {count} votes ({percentage:.1f}%)")
             
             # Translations
-            for i, model in enumerate(randomized_models, 1):
+            for i, model in enumerate(post_models, 1):
                 with post_columns[i]:
-                    display_name = get_model_display_name(model, thread['id'])
+                    display_name = get_model_display_name(model, thread['id'], post['id'])
                     st.markdown(f"**{display_name}**")
                     st.markdown(f"**User:** {post['username']}")
                     st.markdown("---")
@@ -313,11 +320,11 @@ def main():
 
                     # Token usage
                     if post['message_english'][model]['tokens']['prompt_tokens']:
-                        st.markdown(f"**Prompt tokens:** {post['message_english'][model]['tokens']['prompt_tokens']}")
+                        st.markdown(f"<span style='color: gray; font-size: 0.9em'>Input tokens: {post['message_english'][model]['tokens']['prompt_tokens']}</span>", unsafe_allow_html=True)
                     if post['message_english'][model]['tokens']['completion_tokens']:
-                        st.markdown(f"**Completion tokens:** {post['message_english'][model]['tokens']['completion_tokens']}")
+                        st.markdown(f"<span style='color: gray; font-size: 0.9em'>Output tokens: {post['message_english'][model]['tokens']['completion_tokens']}</span>", unsafe_allow_html=True)
                     if post['message_english'][model]['tokens']['total_tokens']:
-                        st.markdown(f"**Total tokens:** {post['message_english'][model]['tokens']['total_tokens']}")
+                        st.markdown(f"<span style='color: gray; font-size: 0.9em'>Total tokens: {post['message_english'][model]['tokens']['total_tokens']}</span>", unsafe_allow_html=True)
             
             st.markdown("---")
     else:
